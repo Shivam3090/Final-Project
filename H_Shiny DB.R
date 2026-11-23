@@ -3,7 +3,6 @@ library(ggplot2)
 library(dplyr)
 library(shinydashboard)
 library(plotly)
-library(rsconnect)
 library(tidyr)
 
 # Load the dataset
@@ -114,10 +113,3 @@ server <- function(input, output) {
 
 # Run the Shiny App
 shinyApp(ui, server)
-setwd("C:\Users\shiva\OneDrive\Desktop\CPS-Analytics\ALY-6070\Finalproject")
-
-rsconnect::setAccountInfo(name='shivam0312', token='FF2ECCEE8ADAB3C23E95A896F9787452', secret='fGE/ZpAH4d+2ftdHXJL3642E3N8Sq2ISaCJjzm8M')
-library(rsconnect)
-rsconnect::deployApp()
-
-
